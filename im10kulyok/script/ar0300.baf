@@ -1,34 +1,34 @@
 IF
-Global("Chapter","GLOBAL",3)
-Global("O#IM10Quest","GLOBAL",0)
+	Global("Chapter","GLOBAL",3)
+	Global("O#IM10Quest","GLOBAL",0)
 THEN
-RESPONSE #100
-CreateCreatureObjectOffset("O#Mia",Player1,[160.160]) 
-DisplayStringHead("O#Mia",~Help me! Please!~)
-SetGlobal("O#IM10Quest","GLOBAL",1)
+	RESPONSE #100
+		CreateCreatureObjectOffset("O#Mia",Player1,[160.160]) 
+		DisplayStringHead("O#Mia",@0 /* Help me! Please! */)
+		SetGlobal("O#IM10Quest","GLOBAL",1)
 END
 
 IF
-Global("Chapter","GLOBAL",3)
-Global("O#IM10Quest","GLOBAL",2)
-CombatCounter(0)
-Dead("O#IM10W1")
-Dead("O#IM10W2")
-Dead("O#IM10W3")
+	Global("Chapter","GLOBAL",3)
+	Global("O#IM10Quest","GLOBAL",2)
+	CombatCounter(0)
+	Dead("O#IM10W1")
+	Dead("O#IM10W2")
+	Dead("O#IM10W3")
 THEN
-RESPONSE #100
-CreateCreatureObjectDoor("O#Mia",Player1,0,0,0) 
-SetGlobal("O#IM10Quest","GLOBAL",3)
+	RESPONSE #100
+		CreateCreatureObjectDoor("O#Mia",Player1,0,0,0) 
+		SetGlobal("O#IM10Quest","GLOBAL",3)
 END
 
 IF
-GlobalGT("Chapter","GLOBAL",5)
-Global("O#IM10Quest","GLOBAL",5)
+	GlobalGT("Chapter","GLOBAL",5)
+	Global("O#IM10Quest","GLOBAL",5)
 THEN
-RESPONSE #100
-CreateCreature("O#Mia",[1740.3605],0)
-CreateCreature("O#IM10C1",[1720.3590],0)
-CreateCreature("O#IM10C2",[1764.3580],0)
-CreateCreature("O#Dili",[1771.3623],6)
-SetGlobal("O#IM10Quest","GLOBAL",6)
+	RESPONSE #100
+		CreateCreature("O#Mia",[1740.3605],0)
+		CreateCreature("O#IM10C1",[1720.3590],0)
+		CreateCreature("O#IM10C2",[1764.3580],0)
+		CreateCreature("O#Dili",[1771.3623],6)
+		SetGlobal("O#IM10Quest","GLOBAL",6)
 END
