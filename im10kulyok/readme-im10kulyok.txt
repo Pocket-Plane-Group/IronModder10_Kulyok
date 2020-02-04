@@ -59,3 +59,14 @@ Isle Studios, Interplay Entertainment Corp., or the Wizards of the Coast.
 All redistribution rights belong to Pocket Plane Group.
 
 All Iron Mods can be found at http://www.pocketplane.net/ironmod
+
+
+Versions History
+================
+
+Version 1.1
+-----------
+
+Version 1.0
+-----------
+- Initial release.

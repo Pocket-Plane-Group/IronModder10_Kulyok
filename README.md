@@ -14,6 +14,17 @@
 This mod is an expansion of Dili's story - a girl the player meets in Chapter 4. (Hint: if you talked to Dili in Spellhold, go to the Docks District in Chapter 6 or 7, and go down to the ships.)
 
 
+Jury scoring:
+
+>This prolific modder makes her first appearance under the hot lights and frenetic atmosphere of Infinity Stadium, presenting new insight into the tormented world of Dili. Will the pabulum of deception fed by Dili's mother translate into a taste treat in the mouths of our judges, or come off like a sour pickle?
+
+>*Even familiar ingredients can yield new and interesting dishes. Kulyok's entry used some familiar quest memes and, though the outcome was predictable, still managed to tease the palate with an enjoyable offering.* - CamDawg
+
+>*With a deliciously evil entry, Iron Modder Kulyok provides a quest with a bitter aftertaste; one of desiring revenge. The good-natured PC just couldn't turn down a woman's plea for her daughter, and we were off to save not only Imoen, but another prisoner of Spellhold, as well. Our chef leaves plenty of options with alternate side-dishes; more than can be anticipated in the short timespan she has had to prepare the meal. No apparent flaws can be found - either in the taste or visual presentation of the dishes. An excellent composition.* - SConrad
+
+>*What can I say about this dish? Truly this chef has yet to disappoint. Hands down my favorite dish of the evening.* - MTS
+
+
 <hr>
 
 
@@ -29,9 +40,9 @@ This modification is not developed, supported, or endorsed by BioWare™ or Interp
 
 ##### Version 1.1
 
-- Moved tp2 file into mod top folder and renamed *setup-im10kulyok.tp2* -> *im10kulyok.tp2* to support AL|EN's "Project Infinity".
+- Renamed *setup-im10kulyok.tp2* -> *im10kulyok.tp2* to support AL|EN's "Project Infinity".
 - Added *im10kulyok.ini* metadata file to support AL|EN's "Project Infinity".
-- Replaced `AT_INTERACTIVE_EXIT` command with more accurate `README` one.
+- Added `README` command.
 - Added VERSION flag.
 - Removed useless backup folder.
 - Lower cased files.

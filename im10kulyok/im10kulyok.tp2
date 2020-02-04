@@ -1,57 +1,69 @@
-BACKUP ~IM10Kulyok/backup~
+BACKUP ~im10kulyok/backup~
 
 AUTHOR ~kulyok@yandex.ru~
 
-AUTO_TRA ~IM10Kulyok/%s~
+VERSION ~v1.1~
 
-LANGUAGE ~English~ ~English~ ~IM10Kulyok/English/Setup-IM10Kulyok.tra~
+README ~im10kulyok/readme-im10kulyok.txt~
 
-BEGIN ~Iron Modder 10, Kulyok's entry~
+AUTO_TRA ~im10kulyok/lang/%s~
+
+LANGUAGE ~English~
+		 ~english~
+		 ~im10kulyok/lang/english/setup.tra~
+		 ~im10kulyok/lang/english/journal.tra~
+LANGUAGE ~Francais (traduction : ProfErrata)~
+		 ~french~
+		 ~im10kulyok/lang/french/setup.tra~
+		 ~im10kulyok/lang/french/journal.tra~
+		 
+
+BEGIN @0 /* Iron Modder 10, Kulyok's entry */
 
 // CamDawg's custom State
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
 COPY_EXISTING ~cowenf1.cre~ ~override/o#im10w1.cre~
-WRITE_ASCII 0x248 ~o#im10w1~ #8  // override
-WRITE_ASCII 0x2cc ~o#im10w1~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#im10w1~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#im10w1~ #8  // override
+	WRITE_ASCII 0x2cc ~o#im10w1~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#im10w1~ #32 // death variable
 
 COPY_EXISTING ~cowenf3.cre~ ~override/o#im10w2.cre~
-WRITE_ASCII 0x248 ~o#im10w2~ #8  // override
-WRITE_ASCII 0x2cc ~o#im10w2~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#im10w2~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#im10w2~ #8  // override
+	WRITE_ASCII 0x2cc ~o#im10w2~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#im10w2~ #32 // death variable
 
 COPY_EXISTING ~cowenf4.cre~ ~override/o#im10w3.cre~
-WRITE_ASCII 0x248 ~o#im10w3~ #8  // override
-WRITE_ASCII 0x2cc ~o#im10w3~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#im10w3~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#im10w3~ #8  // override
+	WRITE_ASCII 0x2cc ~o#im10w3~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#im10w3~ #32 // death variable
 
 // Mia
-COPY ~IM10Kulyok/characters/o#mia.cre~ ~override/o#mia.cre~
-WRITE_ASCII 0x248 ~o#mia~ #8  // override
-WRITE_ASCII 0x2cc ~o#mia~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#mia~ #32 // death variable
-SAY NAME1 ~Mia~
-SAY NAME2 ~Mia~
+COPY ~im10kulyok/characters/o#mia.cre~ ~override/o#mia.cre~
+	WRITE_ASCII 0x248 ~o#mia~ #8  // override
+	WRITE_ASCII 0x2cc ~o#mia~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#mia~ #32 // death variable
+	SAY NAME1 @1 /* Mia */
+	SAY NAME2 @1 /* Mia */
 
 // Dili in Chapter 6
 COPY_EXISTING ~ppdili.cre~ ~override/o#dili.cre~
-WRITE_ASCII 0x248 ~o#dili~ #8  // override
-WRITE_ASCII 0x2cc ~o#dili~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#dili~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#dili~ #8  // override
+	WRITE_ASCII 0x2cc ~o#dili~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#dili~ #32 // death variable
 
 COPY_EXISTING ~cowenf2.cre~ ~override/o#im10c1.cre~
-WRITE_ASCII 0x248 ~o#im10c1~ #8  // override
-WRITE_ASCII 0x2cc ~o#im10c1~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#im10c1~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#im10c1~ #8  // override
+	WRITE_ASCII 0x2cc ~o#im10c1~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#im10c1~ #32 // death variable
 
 COPY_EXISTING ~cowenf2.cre~ ~override/o#im10c2.cre~
-WRITE_ASCII 0x248 ~o#im10c2~ #8  // override
-WRITE_ASCII 0x2cc ~o#im10c2~ #8  // dialogue
-WRITE_ASCII 0x280 ~o#im10c2~ #32 // death variable
+	WRITE_ASCII 0x248 ~o#im10c2~ #8  // override
+	WRITE_ASCII 0x2cc ~o#im10c2~ #8  // dialogue
+	WRITE_ASCII 0x280 ~o#im10c2~ #32 // death variable
 
-COMPILE ~IM10Kulyok/dialogue/O#IM10Kulyok.d~
-	~IM10Kulyok/script/O#Mia.baf~
+COMPILE ~im10kulyok/dialogue/o#im10kulyok.d~
+		~im10kulyok/script/o#mia.baf~
 
-EXTEND_BOTTOM ~AR0300.bcs~ ~IM10Kulyok/script/AR0300.baf~
+EXTEND_BOTTOM ~ar0300.bcs~ ~im10kulyok/script/ar0300.baf~
