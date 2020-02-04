@@ -66,6 +66,16 @@ Versions History
 
 Version 1.1
 -----------
+- Renamed setup-im10kulyok.tp2 -> im10kulyok.tp2 to support AL|EN's "Project Infinity".
+- Added im10kulyok.ini metadata file to support AL|EN's "Project Infinity".
+- Added `README` command.
+- Added VERSION flag.
+- Removed useless backup folder.
+- Lower cased files.
+- Updated readme-im10kulyok.txt.
+- Added French translation (Prof Errata).
+- Traified mod.
+- Updated WeiDU installer to v246.
 
 Version 1.0
 -----------

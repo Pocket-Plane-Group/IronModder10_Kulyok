@@ -47,8 +47,8 @@ This modification is not developed, supported, or endorsed by BioWare™ or Interp
 - Removed useless backup folder.
 - Lower cased files.
 - Updated *readme-im10kulyok.txt*.
+- Added French translation (Prof Errata).
 - Traified mod.
-- Added French translation (ProfErrata).
 - Updated WeiDU installer to v246.
 
 
